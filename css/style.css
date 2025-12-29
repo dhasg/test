@@ -15,7 +15,7 @@ body {
 }
 
 /* --- Basic Link Styling --- */
-a,
+a:link,
 a:visited {
   color: inherit; /* Default text color (e.g., black) */
   text-decoration: none; /* Removes default underline */
@@ -478,6 +478,7 @@ img {
 #website {
     display: none !important;
 }
+
 
 
 
