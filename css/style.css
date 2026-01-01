@@ -9,10 +9,40 @@ body {
 .top-bar {
     background: #15c048;
     color: #fff;
-    padding: 8px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 20px;
     font-size: 14px;
 }
+
+/* Left side (phone) */
+.top-left {
+    white-space: nowrap;
+}
+
+/* Right side (email icon + text) */
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* controls closeness */
+}
+
+.email-group {
+    display: flex;
+    align-items: center;
+    gap: 6px; /* 👈 controls how close email is to icon */
+}
+
+.social-icon img {
+    width: 22px;
+}
+
+.email-address {
+    color: #fff;
+    font-weight: 500;
+}
+
 
 /* --- Basic Link Styling --- */
 a:link,
@@ -35,6 +65,37 @@ a:active {
   color: blue; /* Keep active (clicked) same color */
 }
 
+.nav-bar {
+    background: #2e7d32;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* menu stays in place */
+    padding: 0 20px;
+}
+
+/* Logo + header container */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* 👈 controls closeness */
+}
+
+/* Logo size */
+.logo {
+    height: 3.2rem;
+}
+
+/* Header text */
+.site-title {
+    margin: 0; /* removes default h1 spacing */
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.site-title a {
+    color: #faeb17;
+    text-decoration: none;
+}
 
 nav {
     background: #2e7d32;
@@ -63,7 +124,7 @@ nav ul li a {
 
 .hero {
     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
-                url("../assets/images/hero.jpg");
+                url("../assets/images/slide1.jpg");
     background-size: cover;
     color: white;
     text-align: center;
@@ -224,7 +285,12 @@ img {
     height: auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+     .top-bar {
+        flex-direction: column;
+        gap: 6px;
+        text-align: center;
+    }
     nav ul {
         flex-direction: column;
     }
@@ -283,15 +349,7 @@ img {
     transform: translateY(-100%);
 }
 
-.top-bar {
-    background: #15c048;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6px 15px;
-    font-size: 14px;
-}
+
 
 .social-icons a {
     margin-left: 10px;
@@ -309,14 +367,6 @@ img {
 .social-icons a:hover,
 .social-icons a:focus {
     color: #ffeb3b; /* Optional hover color */
-}
-
-.nav-bar {
-    background: #2e7d32;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 20px;
 }
 
 .nav-bar h1 {
