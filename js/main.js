@@ -157,6 +157,13 @@ fetch("data/news.json")
 
     const prevButton = document.querySelector(".prev-slide");
     const nextButton = document.querySelector(".next-slide");
+    const dots = document.querySelectorAll('.dot');
+
+    // Function to update the active dot
+    function updateDots() {
+      dots.forEach(dot => dot.classList.remove('active')); // Remove active class from all dots
+      dots[currentIndex].classList.add('active'); // Add active class to the current dot
+    }
 
     function prevSlide() {
     // Remove 'active' class from all slides
@@ -165,6 +172,9 @@ fetch("data/news.json")
     // Go to the previous slide
     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
     slides[currentIndex].classList.add("active");
+
+    // Update the dots
+    updateDots();
     }
 
     function nextSlide() {
@@ -174,14 +184,28 @@ fetch("data/news.json")
     // Go to the next slide
     currentIndex = (currentIndex + 1) % slides.length;
     slides[currentIndex].classList.add("active");
+
+    // Update the dots
+    updateDots();
     }
 
     // Listen for manual slide changes
     prevButton.addEventListener("click", prevSlide);
     nextButton.addEventListener("click", nextSlide);
+    
+    // Listen for dot clicks
+    dots.forEach(dot => {
+      dot.addEventListener("click", () => {
+        currentIndex = parseInt(dot.getAttribute("data-slide"));
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[currentIndex].classList.add("active");
+        updateDots();
+      });
+    });
 
     // Change slide every 5 seconds
     setInterval(changeSlide, 5000);
+    
   })
   .catch(error => {
     console.error("Error loading news data:", error);

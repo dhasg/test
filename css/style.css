@@ -305,9 +305,12 @@ img {
 }
 
 .hero-slider {
-    position: relative;
-    height: 70vh;
+    position: relative; /* Ensure the slider is the reference for absolute positioning */
+    width: 100%;
+    height: 100vh; /* Ensure the hero section fills the viewport */
+    max-width: 100%;
     overflow: hidden;
+
 }
 
 .slide {
@@ -629,6 +632,89 @@ img {
     text-decoration: underline;
 }
 */
+
+.slide img {
+  width: 100%;
+  height: 100%; /* Make sure image takes up the full slider area */
+  object-fit: cover; /* Maintain aspect ratio and cover the whole space */
+  display: block;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.slider-nav button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+.slider-nav button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Dots navigation styling */
+.slider-dots {
+  position: absolute;
+  bottom: 20px; /* Ensure it's always at the bottom of the slider */
+  left: 50%;
+  transform: translateX(-50%); /* Center the dots */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 10; /* Ensure it stays on top */
+  pointer-events: all; /* Ensure dots are clickable even in fullscreen */
+}
+
+.slider-dots .dot {
+  width: 10px; /* Slightly bigger for better visibility */
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active {
+  background-color: rgb(255, 255, 255);
+}
+
+.slider-dots .dot:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Ensure the dots container stays in place across all screen sizes */
+@media screen and (max-width: 1200px) {
+  .slider-dots {
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-dots {
+    bottom: 15px; /* Adjust bottom space for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-dots {
+    bottom: 10px; /* Adjust further for very small screens */
+  }
+}
 
 
 /*news.html*/
