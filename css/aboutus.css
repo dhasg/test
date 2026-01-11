@@ -1,0 +1,218 @@
+/* General Content Styling */
+.content {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1b5e20; /* Dark green for titles */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #15c048;
+    padding-bottom: 10px;
+}
+
+.subheading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #1b5e20;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.intro-text {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.vision-mission-text {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .subheading {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* General Styles for District Profile */
+.district-profile {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+}
+
+.district-profile h2, .district-profile h3 {
+    color: #1b5e20; /* Dark green for titles */
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.district-profile p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.district-profile ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.district-profile ul li {
+    margin-bottom: 8px;
+}
+
+.district-profile table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.district-profile table th, .district-profile table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.district-profile .section-title {
+    font-size: 1.8rem;
+    color: #15c048;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.district-profile .overview-section,
+.district-profile .health-section,
+.district-profile .geography-section,
+.district-profile .climate-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .district-profile {
+        padding: 20px;
+    }
+
+    .district-profile h2 {
+        font-size: 1.5rem;
+    }
+
+    .district-profile table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+}
+
+/* General Section Styling */
+.health-subdistricts {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.health-subdistricts .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+.health-subdistricts p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Accordion Styles */
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
+
+.accordion-toggle {
+    background-color: #15c048;
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-toggle:hover {
+    background-color: #13a440;
+}
+
+.accordion-content {
+    display: none;
+    padding-left: 20px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #15c048;
+}
+
+.accordion-content ul {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.accordion-content ul li {
+    margin-bottom: 5px;
+}
+
+/* Show content when accordion is open */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+

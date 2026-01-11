@@ -1,0 +1,147 @@
+/* General Reset for Underlines */
+.district-profile h1, .district-profile h2, .district-profile h3,
+.district-profile p, .district-profile ul li {
+    text-decoration: none; /* Remove any text decoration */
+}
+
+/* Scoped General Styles for District Profile Section */
+.district-profile {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Titles (h1, h2, h3) inside district profile */
+.district-profile h1, .district-profile h2, .district-profile h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #1b5e20; /* Dark green for titles */
+    margin-bottom: 10px;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Paragraphs inside district profile */
+.district-profile p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Container for the district profile */
+.district-profile {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Profile Header */
+.district-profile .profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.district-profile .profile-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #15c048;
+}
+
+.district-profile .profile-subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Section Titles */
+.district-profile .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+/* Health Information & District Features */
+.district-profile .health-info-section, 
+.district-profile .district-features-section, 
+.district-profile .challenges-section, 
+.district-profile .conclusion-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.district-profile ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.district-profile ul li {
+    margin-bottom: 10px;
+    text-decoration: none; /* Remove underline from list items */
+}
+
+.district-profile ul li strong {
+    font-weight: 700;
+}
+
+/* Lists Styling */
+.district-profile .health-stats li, 
+.district-profile .district-features li, 
+.district-profile .challenges-opportunities li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Customize List Items in Challenges & Opportunities */
+.district-profile .challenges-opportunities li ul {
+    margin-left: 20px;
+    list-style-type: square;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Hover effect for list items */
+.district-profile ul li:hover {
+    color: #15c048;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .district-profile {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .district-profile .profile-title {
+        font-size: 2rem;
+    }
+
+    .district-profile .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Introduction Section Styling */
+.district-profile .intro-section {
+    margin-bottom: 30px; /* Add space between sections */
+}
+
+.district-profile .intro-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.district-profile .intro-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}

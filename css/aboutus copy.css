@@ -1,0 +1,152 @@
+/* Scoped General Styles for District Profile Section */
+.district-profile {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Titles */
+.district-profile h1, .district-profile h2, .district-profile h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #1b5e20; /* Dark green for titles */
+    margin-bottom: 10px;
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Introduction Section */
+.district-profile .intro-section {
+    margin-bottom: 30px;
+}
+
+.district-profile .intro-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+.district-profile .intro-section p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Health Information Section */
+.district-profile .health-info-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.district-profile .health-info-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+.district-profile .health-info-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.district-profile .health-info-section ul li {
+    margin-bottom: 10px;
+}
+
+.district-profile .health-info-section ul li strong {
+    font-weight: 700;
+}
+
+/* District Map Section */
+.district-profile .district-map-section {
+    margin-bottom: 30px;
+}
+
+.district-profile .district-map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+/* Key District Features Section */
+.district-profile .district-features-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.district-profile .district-features-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+.district-profile .district-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.district-profile .district-features ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.district-profile .district-features ul li strong {
+    font-weight: 700;
+}
+
+/* Challenges and Opportunities Section */
+.district-profile .challenges-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.district-profile .challenges-section .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #15c048;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #15c048;
+    padding-bottom: 5px;
+}
+
+.district-profile .challenges-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.district-profile .challenges-section ul li {
+    margin-bottom: 10px;
+}
+
+.district-profile .challenges-section ul li strong {
+    font-weight: 700;
+}
+
+.district-profile .challenges-section ul li ul {
+    margin-left: 20px;
+    list-style-type: square
